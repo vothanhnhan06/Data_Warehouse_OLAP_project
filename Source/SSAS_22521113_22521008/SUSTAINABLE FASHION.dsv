@@ -1,0 +1,295 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f753d57a-f51b-46b3-857f-2828c26365af" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SUSTAINABLE FASHION</ID>
+  <Name>SUSTAINABLE FASHION</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>SUSTAINABLE FASHION</DataSourceID>
+  <Schema>
+    <xs:schema id="SUSTAINABLE_x0020_FASHION" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="SUSTAINABLE_x0020_FASHION" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6ee42cd8-c7ed-4a27-9096-480db1be9a88">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact" msprop:DbTableName="Fact" msprop:FriendlyName="Fact" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="58e53ca3-6f01-4f76-988e-471057913f23">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Fact_ID" msprop:FriendlyName="Fact_ID" msprop:DbColumnName="Fact_ID" msprop:design-time-name="d48549db-fec7-43f7-afb2-e72bdee89d39" type="xs:int" />
+                  <xs:element name="Carbon_Footprint_MT" msprop:FriendlyName="Carbon_Footprint_MT" msprop:DbColumnName="Carbon_Footprint_MT" msprop:design-time-name="a130263d-86ca-40c1-975b-91239a53e0b4" type="xs:double" minOccurs="0" />
+                  <xs:element name="Water_Usage_Liters" msprop:FriendlyName="Water_Usage_Liters" msprop:DbColumnName="Water_Usage_Liters" msprop:design-time-name="c8591bc6-7eb5-4ede-b519-b5a5c813fd1a" type="xs:double" minOccurs="0" />
+                  <xs:element name="Waste_Production_KG" msprop:FriendlyName="Waste_Production_KG" msprop:DbColumnName="Waste_Production_KG" msprop:design-time-name="5513aad5-7982-4448-ab49-8718e624d890" type="xs:double" minOccurs="0" />
+                  <xs:element name="Average_Price_USD" msprop:FriendlyName="Average_Price_USD" msprop:DbColumnName="Average_Price_USD" msprop:design-time-name="2b9d50cd-4eed-43b3-9f30-292bf274adce" type="xs:double" minOccurs="0" />
+                  <xs:element name="Brand_ID" msprop:FriendlyName="Brand_ID" msprop:DbColumnName="Brand_ID" msprop:design-time-name="ab3c30e0-ba6e-4a5a-b7a6-42680a816312" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_ID" msprop:FriendlyName="Material_ID" msprop:DbColumnName="Material_ID" msprop:design-time-name="d8083a96-19c3-414e-a94a-8e8b85beb7ea" type="xs:int" minOccurs="0" />
+                  <xs:element name="Recycling_ID" msprop:FriendlyName="Recycling_ID" msprop:DbColumnName="Recycling_ID" msprop:design-time-name="6074f362-9875-493e-9797-61352ab863ce" type="xs:int" minOccurs="0" />
+                  <xs:element name="Product_ID" msprop:FriendlyName="Product_ID" msprop:DbColumnName="Product_ID" msprop:design-time-name="a269a721-9559-498e-a660-be79760c26fc" type="xs:int" minOccurs="0" />
+                  <xs:element name="Certification_ID" msprop:FriendlyName="Certification_ID" msprop:DbColumnName="Certification_ID" msprop:design-time-name="25938902-fd35-44e6-9557-9d47261b3ad3" type="xs:int" minOccurs="0" />
+                  <xs:element name="Market_Trend_ID" msprop:FriendlyName="Market_Trend_ID" msprop:DbColumnName="Market_Trend_ID" msprop:design-time-name="dd2acd9d-d61c-4670-b088-5657aad713a7" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year_ID" msprop:FriendlyName="Year_ID" msprop:DbColumnName="Year_ID" msprop:design-time-name="44caa95c-4350-4507-a95c-1d3aebe37ae0" type="xs:int" minOccurs="0" />
+                  <xs:element name="Eco_Friendly_Manufacturing_ID" msprop:FriendlyName="Eco_Friendly_Manufacturing_ID" msprop:DbColumnName="Eco_Friendly_Manufacturing_ID" msprop:design-time-name="e521cddd-5691-481f-8803-f81b414480fa" type="xs:int" minOccurs="0" />
+                  <xs:element name="Sustainability_Rating_ID" msprop:FriendlyName="Sustainability_Rating_ID" msprop:DbColumnName="Sustainability_Rating_ID" msprop:design-time-name="2a8c6b6d-8985-4db5-b5f6-ba119623fee2" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Brand" msprop:DbTableName="Dim_Brand" msprop:FriendlyName="Dim_Brand" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="6681ddc9-f989-4504-80ac-3909989f5778">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Brand_ID" msprop:FriendlyName="Brand_ID" msprop:DbColumnName="Brand_ID" msprop:design-time-name="a12504f5-fca3-4fae-8358-21c53ed24d8f">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Brand_Name" msprop:FriendlyName="Brand_Name" msprop:DbColumnName="Brand_Name" msprop:design-time-name="8ff7249c-aa43-4f3c-9322-0330cf99d451" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Country" msprop:FriendlyName="Country" msprop:DbColumnName="Country" msprop:design-time-name="73fefbee-58d9-4f60-88b6-69be314e6ce6" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Market_Trend" msprop:DbTableName="Dim_Market_Trend" msprop:FriendlyName="Dim_Market_Trend" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="abbcdad4-f09e-495e-93d8-0d2682ac4cca">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Market_Trend_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Market_Trend_ID" msprop:DbColumnName="Market_Trend_ID" msprop:design-time-name="7b14fb78-4679-496c-91dd-ff7a5946da8b" type="xs:int" />
+                  <xs:element name="Market_Trend" msprop:FriendlyName="Market_Trend" msprop:DbColumnName="Market_Trend" msprop:design-time-name="94e4be56-45cb-4f02-b521-0a2ff555a508" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Sustainability_Rating" msprop:DbTableName="Dim_Sustainability_Rating" msprop:FriendlyName="Dim_Sustainability_Rating" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="0c5b91ee-ce63-4e4c-aaf6-c8f61b9e0a31">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Sustainability_Rating_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Sustainability_Rating_ID" msprop:DbColumnName="Sustainability_Rating_ID" msprop:design-time-name="2a22af03-ab84-4a3e-8bff-714b22779ddc" type="xs:int" />
+                  <xs:element name="Sustainability_Rating" msprop:FriendlyName="Sustainability_Rating" msprop:DbColumnName="Sustainability_Rating" msprop:design-time-name="1e85e3f8-a0fb-4e7d-ab5b-834083ceae3b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Certification" msprop:DbTableName="Dim_Certification" msprop:FriendlyName="Dim_Certification" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="f5f33c5d-ed6c-440d-9263-05975a8d441c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Certification_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Certification_ID" msprop:DbColumnName="Certification_ID" msprop:design-time-name="ddc62c50-a9bf-4071-9b69-db21434c4d1d" type="xs:int" />
+                  <xs:element name="Certifications" msprop:FriendlyName="Certifications" msprop:DbColumnName="Certifications" msprop:design-time-name="0836fe4a-0206-46e4-8a60-1ee88b9bcbc0" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Material" msprop:DbTableName="Dim_Material" msprop:FriendlyName="Dim_Material" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="70561b46-c3db-4100-9a99-40efbb3cff71">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Material_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Material_ID" msprop:DbColumnName="Material_ID" msprop:design-time-name="dd0ceabf-d3e4-4d0b-9eb9-8fe6cf575992" type="xs:int" />
+                  <xs:element name="Material_Type" msprop:FriendlyName="Material_Type" msprop:DbColumnName="Material_Type" msprop:design-time-name="2e5a98d3-5081-4be8-b958-24a3d0ff12fd" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Eco_Friendly_Manufacturing" msprop:DbTableName="Dim_Eco_Friendly_Manufacturing" msprop:FriendlyName="Dim_Eco_Friendly_Manufacturing" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="67ef2de6-d527-495a-b031-be1cb772e9f7">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Eco_Friendly_Manufacturing_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Eco_Friendly_Manufacturing_ID" msprop:DbColumnName="Eco_Friendly_Manufacturing_ID" msprop:design-time-name="a7bc64f7-b71d-4e53-a9b8-5fd8ffc082ec" type="xs:int" />
+                  <xs:element name="Eco_Friendly_Manufacturing" msprop:FriendlyName="Eco_Friendly_Manufacturing" msprop:DbColumnName="Eco_Friendly_Manufacturing" msprop:design-time-name="0c22ac74-f4ae-45be-9fb1-52b992feb634" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Recycling" msprop:DbTableName="Dim_Recycling" msprop:FriendlyName="Dim_Recycling" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="20835ee5-e686-41d7-8575-4ab9d491fcae">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Recycling_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Recycling_ID" msprop:DbColumnName="Recycling_ID" msprop:design-time-name="6ce56fdc-f31b-4a8b-bf9a-a9486762c3d2" type="xs:int" />
+                  <xs:element name="Recycling_Programs" msprop:FriendlyName="Recycling_Programs" msprop:DbColumnName="Recycling_Programs" msprop:design-time-name="5b358cf4-7d7d-4623-a163-6adac43831eb" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Product" msprop:DbTableName="Dim_Product" msprop:FriendlyName="Dim_Product" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="47b67208-ca6a-477d-9ec4-3d25b4fa2e12">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Product_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Product_ID" msprop:DbColumnName="Product_ID" msprop:design-time-name="8d03bc5b-5986-48d5-9639-a0a03a1a65f8" type="xs:int" />
+                  <xs:element name="Product_Lines" msprop:FriendlyName="Product_Lines" msprop:DbColumnName="Product_Lines" msprop:design-time-name="36cb4923-6f05-4692-89a3-f57f2b8d48ed" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Time" msprop:DbTableName="Dim_Time" msprop:FriendlyName="Dim_Time" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="ecd8e001-4a36-48ef-9ed6-c58e69523203">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Year_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Year_ID" msprop:DbColumnName="Year_ID" msprop:design-time-name="b1b11f0c-c972-47fa-a2d7-a2a7c7471c87" type="xs:int" />
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="20c87094-cc6d-4d24-b41f-d28ffb96cfb7" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Fact_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Brand_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Brand" />
+          <xs:field xpath="Brand_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Market_Trend_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Market_Trend" />
+          <xs:field xpath="Market_Trend_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Sustainability_Rating_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Sustainability_Rating" />
+          <xs:field xpath="Sustainability_Rating_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Certification_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Certification" />
+          <xs:field xpath="Certification_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Material_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Material" />
+          <xs:field xpath="Material_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Eco_Friendly_Manufacturing_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Eco_Friendly_Manufacturing" />
+          <xs:field xpath="Eco_Friendly_Manufacturing_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Recycling_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Recycling" />
+          <xs:field xpath="Recycling_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Product_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Product" />
+          <xs:field xpath="Product_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Time" />
+          <xs:field xpath="Year_ID" />
+        </xs:unique>
+        <xs:keyref name="FK_Fact_Product" refer="dbo_Dim_Product_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Product_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Eco" refer="dbo_Dim_Eco_Friendly_Manufacturing_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Eco_Friendly_Manufacturing_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Material" refer="dbo_Dim_Material_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Material_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Time" refer="dbo_Dim_Time_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Year_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Certification" refer="dbo_Dim_Certification_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Certification_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Brand" refer="dbo_Dim_Brand_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Brand_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Sustainability_Rating" refer="dbo_Dim_Sustainability_Rating_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Sustainability_Rating_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Recycling" refer="dbo_Dim_Recycling_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Recycling_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Market_Trend" refer="dbo_Dim_Market_Trend_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Market_Trend_ID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <SUSTAINABLE_x0020_FASHION xmlns="" />
+  </Schema>
+</DataSourceView>

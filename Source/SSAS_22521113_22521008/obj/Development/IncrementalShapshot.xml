@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS_22521113_22521008</Database>
+    <Server>ASUS_TN</Server>
+    <ConnectionString>Data Source=ASUS_TN;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>QV6+tOTAktULYTi0JwEpBUHCL0w=12/3/2024 1:28:54 PM12/3/2024 1:28:54 PM</TimeStamp>
+        <ID>
+          <String>SUSTAINABLE FASHION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>3fgENB2Da6y+ay8butZ0kPOxRK4=12/3/2024 1:29:05 PM12/3/2024 1:29:05 PM</TimeStamp>
+        <ID>
+          <String>SUSTAINABLE FASHION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1wdzakeHaV7QTrjLMaX3Izda4hM=12/3/2024 1:29:46 PM12/3/2024 1:29:17 PM</TimeStamp>
+        <ID>
+          <String>Dim Market Trend</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0e5WD1DmilFUr+qPOchhi9jfdU0=12/3/2024 1:30:01 PM12/3/2024 1:29:17 PM</TimeStamp>
+        <ID>
+          <String>Dim Recycling</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>KhvVhhBTsofAeSEqLt0g1+QSRYc=12/3/2024 1:30:16 PM12/3/2024 1:29:17 PM</TimeStamp>
+        <ID>
+          <String>Dim Sustainability Rating</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ERW3CNQw8/ES7TLRjhM7jc6DbF0=12/3/2024 1:30:52 PM12/3/2024 1:29:17 PM</TimeStamp>
+        <ID>
+          <String>Dim Brand</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HjChBTl7C5GDHfhbkY02DTlJ57s=12/3/2024 1:31:08 PM12/3/2024 1:29:17 PM</TimeStamp>
+        <ID>
+          <String>Dim Certification</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>A44haVYQuLyxPg1N+29/NUuyueg=12/3/2024 1:31:24 PM12/3/2024 1:29:17 PM</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+mod06hnmKOGTUCMIQWg8FQbZh0=12/3/2024 1:32:38 PM12/3/2024 1:29:17 PM</TimeStamp>
+        <ID>
+          <String>Dim Material</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8KE88Mw1fApEP87MdUugBO1/SOU=12/3/2024 1:32:55 PM12/3/2024 1:29:17 PM</TimeStamp>
+        <ID>
+          <String>Dim Eco Friendly Manufacturing</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>D+AAIKFRy766NOoie2cGhWEGz/g=12/3/2024 1:33:10 PM12/3/2024 1:29:17 PM</TimeStamp>
+        <ID>
+          <String>Dim Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>lAz5lImfXJJ4MqjV6W56Zp6a8EQ=12/3/2024 1:33:10 PM12/3/2024 1:29:17 PMBiFfkztrS3Sqwk/OC45KIxbZx7w=12/3/2024 1:29:17 PM12/3/2024 1:29:17 PM</TimeStamp>
+        <ID>
+          <String>SUSTAINABLE FASHION</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>5KL/dqhZE389TxL76NoILUbrM94=12/3/2024 1:15:08 PM12/3/2024 1:15:07 PM</TimeStamp>
+      <ID>
+        <String>SSAS_22521113_22521008</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-12-03T06:33:28.123333Z</LastDeployed>
+</DeploymentSnapshot>
